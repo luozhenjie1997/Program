@@ -1,0 +1,41 @@
+package org.fjzzy.商品;
+
+public class GoodsInfo {
+	private String goodsNum;
+	private String goodsName;
+	private String goodsdanjia;
+	private String goodskucun;
+	public String getGoodsNum() {
+		return goodsNum;
+	}
+	public void setGoodsNum(String goodsNum) {
+		this.goodsNum = goodsNum;
+	}
+	public String getGoodsName() {
+		return goodsName;
+	}
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
+	}
+	public String getGoodsdanjia() {
+		return goodsdanjia;
+	}
+	public void setGoodsdanjia(String goodsdanjia) {
+		this.goodsdanjia = goodsdanjia;
+	}
+	public String getGoodskucun() {
+		return goodskucun;
+	}
+	public void setGoodskucun(String goodskucun) {
+		this.goodskucun = goodskucun;
+	}
+	public GoodsInfo(String goodsNum, String goodsName, String goodsdanjia, String goodskucun) {
+		super();
+		this.goodsNum = goodsNum;
+		this.goodsName = goodsName;
+		this.goodsdanjia = goodsdanjia;
+		this.goodskucun = goodskucun;
+	}
+	
+	
+}

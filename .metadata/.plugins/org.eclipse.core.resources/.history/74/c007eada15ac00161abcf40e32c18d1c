@@ -1,0 +1,11 @@
+package org.fjzzy.ex01;
+
+public class Square implements Shape{
+
+
+	public double area(double n) {
+		// TODO 自动生成的方法存根
+		return 0;
+	}
+	
+}

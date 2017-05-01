@@ -1,0 +1,10 @@
+package com.luozhenjie.ex03;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		int a=10100001;
+		System.out.println(a=~a);
+	}
+
+}

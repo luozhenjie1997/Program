@@ -1,0 +1,9 @@
+package org.fjzzy.ex01;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Square.squareArea = new Square();
+	}
+
+}

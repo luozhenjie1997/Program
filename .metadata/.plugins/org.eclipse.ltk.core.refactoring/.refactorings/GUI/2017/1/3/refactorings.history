@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyWindowListenerClose.java&apos; to &apos;Game/src/org.fjzzy.NewGame&apos;&#x0D;&#x0A;－ 原始项目：“GUI”&#x0D;&#x0A;－ 目标元素：“Game/src/org.fjzzy.NewGame”&#x0D;&#x0A;－ 原始元素：“org.fjzzy.ex01.MyWindowListenerClose.java”" description="复制编译单元" destination="=Game/src&lt;org.fjzzy.NewGame" element1="/src&lt;org.fjzzy.ex01{MyWindowListenerClose.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1484733756642" units="1" version="1.0"/>
+</session>

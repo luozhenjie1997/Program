@@ -1,0 +1,134 @@
+package org.fjzzy.Cashier;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+public class App {
+
+	@SuppressWarnings({ "unused", "rawtypes" })
+	public static void goodsInformation() throws IOException {
+		GoodsInformation gi01=new GoodsInformation("001", "冰露矿泉水", 1.00, 100);
+		GoodsInformation gi02=new GoodsInformation("002", "旺仔牛奶", 3.00, 75);
+		GoodsInformation gi03=new GoodsInformation("003", "心相印手帕纸", 2.00, 95);
+		GoodsInformation gi04=new GoodsInformation("004", "黑人牙膏", 3.50, 65);
+		HashMap<String, GoodsInformation> goodlist=new HashMap<String, GoodsInformation>();
+		goodlist.put("001", gi01);
+		goodlist.put("002", gi02);
+		goodlist.put("003", gi03);
+		goodlist.put("004", gi04);
+		
+		String str;
+		
+		System.out.println("============================================");
+		System.out.println("\t\t商品列表");
+		System.out.println("--------------------------------------------");
+		System.out.println("商品编号\t商品名称\t\t商品单价\t商品库存");
+		Collection values = goodlist.values();
+		Iterator it = values.iterator();
+		while (it.hasNext()) {
+			GoodsInformation goodsInfo=(GoodsInformation) it.next();
+			System.out.print(goodsInfo.getGoodsNum()+"\t");
+			System.out.print(goodsInfo.getGoodsName());
+			if (goodsInfo.getGoodsName().length()>4) {
+				System.out.print("\t");
+			} else {
+				System.out.print("\t\t");
+			}
+			System.out.print(goodsInfo.getGoodsPrice()+"\t");
+			System.out.println(goodsInfo.getGoodsinventory());
+		}
+		
+		ArrayList<String> goodsinfo1 = new ArrayList<String>();
+		ArrayList<String> goodsinfo2 = new ArrayList<String>();
+		ArrayList<Double> goodsinfo3 = new ArrayList<Double>();
+		ArrayList<Double> goodsinfo4 = new ArrayList<Double>();
+		ArrayList<Integer> goodsinfo5 = new ArrayList<Integer>();
+		int number;
+		double totalSingle;
+		double total=0;
+		GoodsInformation str1;
+		GoodsInformation number1;
+		BufferedReader date=new BufferedReader(new InputStreamReader(System.in));
+		@SuppressWarnings("resource")
+		Scanner dateNum=new Scanner(System.in);
+		
+		do {
+		System.out.print("请输入要购买的商品编号：");
+		str=date.readLine();
+		
+		while (!goodlist.containsKey(str)) {
+			System.out.println("无法找到该商品的id，请重新输入。。。");
+			System.out.print("请输入要购买的商品编号：");
+			str=date.readLine();
+		}
+		
+		str1=goodlist.get(str);
+		
+		goodsinfo1.add(str1.getGoodsNum());
+		goodsinfo2.add(str1.getGoodsName());
+		goodsinfo3.add(str1.getGoodsPrice());
+		
+		System.out.print("请输入要购买的商品数量：");
+		number=dateNum.nextInt();
+		
+		while (number>str1.getGoodsinventory()) {
+			System.out.println("购买的数量超过库存数量，请重新选择。。。");
+			System.out.print("请输入要购买的商品数量：");
+			number=dateNum.nextInt();
+		}
+		
+		str1.setGoodsinventory(str1.getGoodsinventory()-number);
+		
+		goodsinfo5.add(number);
+		
+		totalSingle=number*str1.getGoodsPrice();
+		goodsinfo3.add(totalSingle);
+		
+		System.out.print("是否继续购买？（继续购买请输入Y或y，结束购买请输入N或n）：");
+		str=date.readLine();
+		while (!str.equals("Y") && !str.equals("y") && !str.equals("N") && !str.equals("n")) {
+			System.out.print("输入有误请重新输入：");
+			str=date.readLine();
+		}
+		
+		total=total+totalSingle;
+		} while (str.equals("Y") || str.equals("y"));
+	}
+	
+	@SuppressWarnings("static-access")
+	public static void Order() throws IOException {
+		App appInfo=new App();
+		appInfo.goodsInformation();
+		int orderNum=1;
+		System.out.println("============================================");
+		if(orderNum<10){
+			System.out.println("订单编号：0000"+orderNum);
+		} else {
+			if (orderNum<100){
+				System.out.println("订单编号：000"+orderNum);
+			} else {
+				if(orderNum<1000){
+					System.out.println("订单编号：00"+orderNum);
+			} else {
+				if(orderNum<10000){
+					System.out.println("订单编号：0"+orderNum);
+					} else {
+						System.out.println("订单编号："+orderNum);
+					}
+				}
+			}
+		}
+		System.out.println("--------------------------------------------");
+		System.out.println("商品编号\t商品名称\t\t商品单价\t购买数量\t商品金额");
+		
+		
+	}
+	
+	@SuppressWarnings("static-access")
+	public static void main(String[] args) throws IOException {
+		App appInfo=new App();
+		appInfo.Order();
+	}
+}

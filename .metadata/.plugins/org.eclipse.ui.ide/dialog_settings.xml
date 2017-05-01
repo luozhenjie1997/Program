@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="F:\临时下载文件夹\test"/>
+			<item value="C:\Users\Administrator\Desktop\Program"/>
+			<item value="C:\Users\Administrator\Desktop\work2"/>
+			<item value="F:\java学习\workspeace\Cashier"/>
+			<item value="C:\Users\Administrator\Desktop\CashRegister"/>
+			<item value="C:\Users\Administrator\Desktop\Cashier"/>
+			<item value="C:\Users\Administrator\Desktop\CashierSystem"/>
+			<item value="C:\Users\Administrator\Desktop"/>
+			<item value="F:\ex05"/>
+			<item value="C:\Users\Administrator\Documents\Tencent Files\1356913256\FileRecv\ex05"/>
+			<item value="C:\Users\Administrator\Desktop\ex05"/>
+			<item value="I:\Work2"/>
+			<item value="I:\work02"/>
+			<item value="I:\ex04"/>
+			<item value="F:\java学习\工程（例子）\ex02"/>
+			<item value="F:\java学习\工程（例子）\ex01"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="599" key="DIALOG_HEIGHT"/>
+		<item value="706" key="DIALOG_X_ORIGIN"/>
+		<item value="129" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,11 @@
+package com.luozhenjie.ex03;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		int a=10100001;
+		int b=00000110;
+		System.out.println(a=a|b);
+	}
+
+}

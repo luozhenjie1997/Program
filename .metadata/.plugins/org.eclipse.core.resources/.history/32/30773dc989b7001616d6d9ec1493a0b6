@@ -1,0 +1,33 @@
+package org.fjzzy.CashierSystem;
+
+import java.util.*;
+
+public class AppInfo {
+	private static Map<String,GoodsInfo> goodsList;
+	
+	public static void main(String[] args) {
+		inft();
+	}
+	
+	private static void inft(){
+		GoodsInfo gi01=new GoodsInfo("001","冰露矿泉水", "1.00", "100");
+		GoodsInfo gi02=new GoodsInfo("002","旺仔牛奶", "3.00", "75");
+		GoodsInfo gi03=new GoodsInfo("003","心相印手帕纸", "2.00", "95");
+		GoodsInfo gi04=new GoodsInfo("004","黑人牙膏", "3.50", "65");
+		
+		goodsList=new HashMap<String,GoodsInfo>();
+		goodsList.put("001", gi01);
+		goodsList.put("002", gi02);
+		goodsList.put("003", gi03);
+		goodsList.put("004", gi04);
+		
+		System.out.println("==============================================");
+		System.out.println("\t\t商品列表");
+		System.out.println("商品编号\t\t商品名称\t\t商品单价\t商品库存");
+		System.out.println("----------------------------------------------");
+		Iterator<GoodsInfo> iterator=goodsList.values().iterator();
+		while(iterator.hasNext()) {
+		}
+		System.out.println("==============================================");
+	}
+}

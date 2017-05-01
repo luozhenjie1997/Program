@@ -1,0 +1,16 @@
+package com.luozhenjie.ex03;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		int a=7;
+		int b=4;
+		int c=(a&b)<<1;
+		if (c==0) {
+		System.out.println(a^c);//加法
+		}
+    }
+}
+
+
+

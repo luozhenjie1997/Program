@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将类型“org.fjzzy.Study.Matrix”重命名为“AddMatrix”&#x0D;&#x0A;－ 原始项目：“org.fjzzy.luozhenjie”&#x0D;&#x0A;－ 原始元素：“org.fjzzy.Study.Matrix”&#x0D;&#x0A;－ 重命名的元素：“org.fjzzy.Study.AddMatrix”&#x0D;&#x0A;－ 更新对已重构元素的引用&#x0D;&#x0A;－ 更新注释和字符串中出现的文本" description="重命名类型“Matrix”" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.fjzzy.Study{Matrix.java[Matrix" matchStrategy="1" name="AddMatrix" qualified="false" references="true" similarDeclarations="false" stamp="1484450948094" textual="false" version="1.0"/>
+</session>

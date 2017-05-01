@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.fjzzy.java.ex02.ClearBeeper"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" code=org.fjzzy.java.ex02.ClearBeeper.class"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ex02"/>
+</launchConfiguration>

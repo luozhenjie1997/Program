@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;bg.jpg&apos; to &apos;PlaneGame/src/image&apos;&#x0D;&#x0A;－ 原始项目：“ExampleGame”&#x0D;&#x0A;－ 目标元素：“PlaneGame/src/image”&#x0D;&#x0A;－ 原始元素：“bg.jpg”" description="复制文件" destination="=PlaneGame/src&lt;image" element1="src/image/bg.jpg" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1485066000266" units="0" version="1.0"/>
+</session>

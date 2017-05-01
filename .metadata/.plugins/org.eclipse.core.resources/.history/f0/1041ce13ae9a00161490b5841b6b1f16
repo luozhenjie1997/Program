@@ -1,0 +1,18 @@
+package com.luozhenjie.ex03;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		int a=100;
+		int b=100;
+		int c=(a&b)<<1;
+		    while (c!=0) {
+		       if (c==0) {
+		    	   System.out.println(a^b);
+		       }
+		}
+    }
+}
+
+
+
