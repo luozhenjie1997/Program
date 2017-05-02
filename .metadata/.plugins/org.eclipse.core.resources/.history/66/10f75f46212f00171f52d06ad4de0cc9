@@ -23,7 +23,7 @@ public class Draw extends MainFrame{
 	static long period;
 	
 	@SuppressWarnings("rawtypes")
-	ArrayList list=new ArrayList();//创建一个容器，用于存储生成的子弹
+	ArrayList list=new ArrayList();//创建一个容器，用来存储生成的子弹
 	PlayerPlaneDate player=new PlayerPlaneDate("image/plane.png", 100, 100, 10);//加载图片
 	Bg bg=new Bg("image/bg.jpg", 0, 0);
 	
